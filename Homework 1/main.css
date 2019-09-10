@@ -3,7 +3,7 @@ body {
 }
 
 nav {
-    background-color: rgb(238, 255, 224);
+    background-color: black;
     padding: 20px 30px;
 }
 
@@ -16,6 +16,7 @@ nav ul {
 nav li {
     margin: 10px;
     padding: 5px 0px;
+    color: #7b9978;
 }
 
 nav li:first-child {
@@ -24,28 +25,34 @@ nav li:first-child {
 
 nav ul a {
     text-decoration: none;
-    color: #212529;
-    text-transform: uppercase;
+    color: #e4c972;
+    text-transform: uppercase;    
+    font-family: 'Roboto', sans-serif;
+
 }
 
 div {
     margin: auto;
-    width: 300px;
-    height: 500px;
-    background-color: rgb(255, 244, 237);
+    height: 668px;
+    width: 375px;
+    background-color: rgb(219, 219, 219);
+    margin-top: 10px;
 }
 
 h1 {
     margin: 0px;
     padding-top: 20px;
+    padding-left: 40px;
+    color: black;
+
+    font-family: 'Anton', sans-serif;
 }
 
 @media(min-width: 540px) {
     nav {
         padding: 0px 10px;
-        background-color: rgb(224, 250, 255);
         width: 50px;
-        height: 100%;
+        height: 1024px;
         float: left;
     }
 
@@ -63,16 +70,18 @@ h1 {
         writing-mode: vertical-lr;
         padding-top: 60px;
     }
+
+
     div {
         margin: auto;
-        width: 500px;
-        height: 500px;
-        background-color: rgb(246, 237, 255);
+        width: 550px;
+        height: 1024px;
     }
 
     h1 {
         margin: 0px;
-        padding: 20px 0px 0px 20px;
+        padding: 50px 0px 0px 70px;
+        text-decoration: underline;
     }
 }
 
@@ -80,7 +89,6 @@ h1 {
 @media(min-width: 1024px) {
     nav {
         padding: 0px 10px;
-        background-color: rgb(202, 188, 253);
         height: 70px;
         width: 100%;
         float: none;
@@ -98,15 +106,18 @@ h1 {
         writing-mode: horizontal-tb;
         padding-top: 15px;
     }
+
+   
     div {
         margin: auto;
-        width: 800px;
-        height: 500px;
-        background-color: rgb(255, 240, 240);
+        margin-top: 30px;
+        width: 80%;
+        height: 900px;
     }
 
     h1 {
         margin: 0px;
         padding-top: 30px;
+        text-align: center;
     }
 }
