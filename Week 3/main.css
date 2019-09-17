@@ -5,6 +5,8 @@ body {
 
 header {
     background-color: lightcyan;
+    width: 75%;
+    margin: auto;
 
 }
 
@@ -95,13 +97,18 @@ nav ul a {
 
 @media(min-width: 800px) {
 
-   
+    main {
+        width: 75%;
+        margin: auto;
+        margin-top: 50px;
     }
+   
+
     .w-lg-50 {
         width: 50%
     }
 
     .w-lg-33 {
-        width: 33%;
+        width: 33.333%;
     }
 }

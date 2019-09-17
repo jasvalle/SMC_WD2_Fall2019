@@ -1,0 +1,51 @@
+.purple {
+    background-color: rgb(185, 185, 185);
+  
+}
+
+.red {
+    background-color: red;
+    background-image: url("https://cdn.pixabay.com/photo/2014/09/07/16/53/hands-437968_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.yellow {
+    background-color: yellow;
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/07/19/52/forever-2607171_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.blue {
+    background-color: blue;
+    background-image: url("https://www.goodfreephotos.com/albums/people/couple-kissing-while-holding-a-selfie.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.green {
+    background-color: green;
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/23/17/42/couple-1853996_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.transparent {
+    background-color: transparent;
+    background-image: url("https://www.publicdomainpictures.net/pictures/160000/velka/couple-damoureux.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.middle {
+    background-image: url("https://i1.wp.com/bestlifeonline.com/wp-content/uploads/2018/10/cooking-class.jpg?w=1024&ssl=1");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}

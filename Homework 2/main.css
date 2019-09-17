@@ -1,0 +1,169 @@
+@import url(colors.css);
+
+body {
+    margin: 0px;
+    background-color: rgb(221, 221, 221);
+}
+
+header {
+    background-color: rgb(236, 227, 174);
+
+}
+
+.logo {
+    height: 170px;
+    background-color: black;
+}
+
+header input#toggler {
+    display: none;
+
+}
+
+header label img {
+    width: 40px;
+    height: auto;
+    margin: 10px 10px 0px;
+    padding-left: 160px;
+}
+
+input#toggler:checked+nav {
+    display: block;
+}
+
+nav {
+    padding: 0px 30px 20px 20px;
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+
+}
+
+nav li {
+    border-bottom: 1px solid;
+    margin: 10px;
+    padding: 5px 0px;
+
+}
+
+nav li:first-child {
+    margin-top: 0px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #212529;
+    text-transform: uppercase;
+}
+
+.logo {
+    text-align: center;
+}
+
+h1 {
+    margin: 0px;
+    padding-top: 30px;
+    color: rgb(199, 199, 199);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 60px;
+}
+
+h3 {
+    margin: 5px;
+    color: rgb(236, 227, 174);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+}
+
+/*------------- main -------------------------*/
+.floater-section {
+    float: left;
+    min-height: 300px;
+    width: 100%;
+}
+
+.floater-section-about {
+    float: left;
+    min-height: 530px;
+    width: 100%;
+}
+
+.container::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+p {
+    line-height: 40px;
+    padding: 30px;
+    font-size: 17px;
+    text-align: center;
+}
+
+
+
+@media(min-width: 800px) {
+    .logo {
+        height: 155px;
+        background-color: black;
+    }
+
+    h1 {
+        margin: 0px;
+        padding-top: 20px;
+        color: rgb(199, 199, 199);
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
+        font-size: 50px;
+    }
+
+    nav {
+        padding: 0px 10px;
+        float: right;
+
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline-block;
+        padding-bottom: 5px;
+        border-bottom: none;
+        margin: 10px 20px;
+    }
+
+    main {
+        width: 75%;
+        margin: auto;
+        margin-top: 50px;
+        height: 1000px;
+    }
+
+    .w-lg-50 {
+        width: 50%
+    }
+
+    .w-lg-33 {
+        width: 33.333%;
+    }
+
+    .w-lg-33-l {
+        width: 33.333%;
+        height: 200px;
+    }
+}
