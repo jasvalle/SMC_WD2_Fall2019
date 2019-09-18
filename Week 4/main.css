@@ -1,14 +1,2 @@
 @import "colors.css";
-
-.floater-section {
-    float: left;
-    min-height: 300px;
-    width: 100%;
-
-}
-
-.container::after {
-    clear: both;
-    content: "";
-    display: block;
-}
+@import "layout.css";
