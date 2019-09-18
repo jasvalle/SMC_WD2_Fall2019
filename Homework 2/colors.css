@@ -4,14 +4,12 @@
 }
 
 .red {
-    background-color: red;
     background-image: url("https://cdn.pixabay.com/photo/2014/09/07/16/53/hands-437968_1280.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
 }
 .yellow {
-    background-color: yellow;
     background-image: url("https://cdn.pixabay.com/photo/2017/08/07/19/52/forever-2607171_1280.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -19,7 +17,6 @@
 }
 
 .blue {
-    background-color: blue;
     background-image: url("https://www.goodfreephotos.com/albums/people/couple-kissing-while-holding-a-selfie.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -27,7 +24,6 @@
 }
 
 .green {
-    background-color: green;
     background-image: url("https://cdn.pixabay.com/photo/2016/11/23/17/42/couple-1853996_1280.jpg");
     background-size: cover;
     background-repeat: no-repeat;
