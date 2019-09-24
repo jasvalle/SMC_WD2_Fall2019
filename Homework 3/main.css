@@ -1,0 +1,252 @@
+@import "layout.css";
+
+body {
+    margin: 0px;
+    height: 800px;
+    background-color: rgb(252, 245, 241);
+}
+/*---------nav----------*/
+.title {
+    background-color: black;
+    height: 80px;
+}
+
+h1.h1title {
+    color: white;
+    margin: 0px;
+    padding-top: 15px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+h2.h2title {
+    color: pink;
+    margin: 0px;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 5px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+header {
+    background-color: pink;
+    margin: auto;
+}
+
+header input#toggler {
+    display: none;
+}
+
+header label img {
+    width: 40px;
+    height: auto;
+    margin: 10px 10px 0px;
+}
+
+nav {
+    padding: 0px 30px 15px 30px;
+    display: none;
+}
+
+input#toggler:checked+nav {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+nav li {
+    margin: 10px;
+    padding: 5px 10px;
+    font-size: 10px;
+    font-family: 'Barlow', sans-serif;
+}
+
+nav li:first-child {
+    margin-top: 0px;
+}
+
+nav ul a {
+    text-decoration:  none;
+    color: black;
+}
+
+/*---------end of nav----------*/
+
+/*---------main----------*/
+main {
+    padding: 0px 10px;
+}
+h1 {
+text-align: center;
+font-family: 'Playfair Display', serif;
+font-size: 30px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+}
+
+p {
+    text-align: center;
+}
+
+p::first-letter {
+    margin-left: 30px;
+}
+
+.container {
+    margin-bottom: 15px;
+}
+/*---------emd of main----------*/
+
+@media (min-width: 540px) {
+    h1.h1title {
+        font-size: 25px;
+    }
+    
+    h2.h2title {
+        font-size: 20px;
+        padding-top: 0px;
+
+    }
+
+    nav,
+    input#toggler:checked+nav {
+        display: block;
+    }
+
+    nav ul li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    header label img {
+        display: none;
+    }
+
+    input#toggler:checked+nav {
+        display: block;
+    }
+
+    main {
+        width: 90%;
+        margin:auto;
+    }
+
+    .container {
+        margin-bottom: 20px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    
+    h3 {
+        font-size: 15px;
+        font-style: italic;
+    }
+
+    p {
+        line-height: 26px;
+    }
+}
+
+@media (min-width: 800px) {
+    body {
+        height: 1000px;
+    }
+
+    .title {
+        height: 150px;
+        padding-left: 200px;
+    }
+    h1.h1title {
+        font-size: 50px;
+        text-align: left;
+    }
+    
+    h2.h2title {
+        font-size: 30px;
+        padding-top: 0px;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 35px;
+        margin-bottom: 0px;
+    }
+
+    h3 {
+        font-size: 15px;
+        font-style: italic;
+    }
+    header label img {
+        display: none;
+    }
+
+    input#toggler:checked+nav {
+        display: block;
+    }
+
+    nav,
+    input#toggler:checked+nav {
+        display: block;
+    }
+
+    nav {
+        padding: 0px 10px;
+    }
+    nav ul li {
+        display: inline-block;
+    }
+
+    nav ul {
+        padding-left: 170px;
+    }
+
+    nav li {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    main {
+        width: 70%;
+        margin:auto;
+    }
+
+    p{
+        text-align: left;
+        padding: 10px 30px;
+        line-height: 24px;
+    }
+
+    .container {
+        margin-bottom: 15px;
+    }
+
+    p.matches {
+        padding: 5px 15px;
+    }
+
+}
+
