@@ -1,0 +1,35 @@
+.purple {
+    background-color: purple;
+  
+}
+
+.red {
+  background-color: red;
+}
+.yellow {
+    background-color:yellow;
+
+}
+
+.blue {
+    background-color: blue;
+
+}
+
+.green {
+    background-color: green;
+
+}
+
+.transparent {
+    background-color: transparent;
+
+}
+
+.middle {
+    background-image: url("https://i1.wp.com/bestlifeonline.com/wp-content/uploads/2018/10/cooking-class.jpg?w=1024&ssl=1");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
