@@ -2,4 +2,13 @@
 @import "layout.css";
 @import "navbar.css";
 
+/*verticle align*/
+.content-table {
+    display: table;
+}
+
+.content-table p {
+    display: table-cell;
+    vertical-align: middle;
+}
 

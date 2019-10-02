@@ -41,14 +41,31 @@ nav li:first-child {
     margin-top: 0px;
 }
 
-nav ul li {
-    
-}
-
 nav ul a {
     text-decoration: none;
     color: #212529;
     text-transform: uppercase;
 }
 
+@media(min-width: 540px){
+    nav ul li {
+        display: inline-block;
+        padding-bottom: 5px;
+        border-bottom: 0px;
+        margin: 10px 20px;
+    }
+
+    header label {
+        display: none;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav {
+        display: block;
+        padding: 0px 10px;
+    }
+}
 
