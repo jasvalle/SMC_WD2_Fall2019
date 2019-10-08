@@ -1,0 +1,55 @@
+@import "colors.css";
+@import "layout.css";
+@import "navbar.css";
+@import url('https://fonts.googleapis.com/css?family=Lemon|Montserrat:300i,400,800&display=swap');
+
+/*verticle align*/
+.content-table {
+    display: table;
+}
+
+.content-table p {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+body {
+    margin: auto;
+}
+
+main {
+    margin: auto;
+    width: 90%;
+}
+
+img {
+    width: 100%;
+}
+
+.titlemobile {
+    position: relative;
+}
+
+.titlemobile h1 {
+    font-family: 'Lemon', cursive;
+    position: absolute;
+    left: 2px;
+    top: -214px;
+    color: #F7b52b;
+    font-size: 35px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.s-title {
+}
+
+.s-title h1 {
+    text-align: center;
+    font-family: 'Lemon', cursive;
+    font-size: 20px;
+    color: #F7b52b;
+    padding-top: 10px;
+    margin: 0px;
+}
