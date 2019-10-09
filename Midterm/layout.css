@@ -18,6 +18,14 @@ img {
 .content {
     padding: 10px;
 }
+
+.short {
+    min-height: 50px;
+}
+
+.short h3 {
+    margin: 0px;
+}
 /*-----medium screens-----*/
 @media (min-width: 540px) {
     .container {

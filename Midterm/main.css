@@ -66,6 +66,20 @@ p {
     font-family: 'Montserrat', sans-serif;
 }
 
+th, td {
+    padding: 5px 5px 5px 5px;
+    text-align: left;
+}
+
+th {
+    width: 50%;
+}
+
+
+table {
+    width: 100%;
+}
+
 /*-------------------MEDIUM-------------------------*/
 @media (min-width: 540px) {
     h1.h1title {
@@ -151,8 +165,6 @@ p {
         display: inline-block;
     }
 
-
-
     nav li {
         font-size: 18px;
         text-align: left;
@@ -175,6 +187,13 @@ p {
         padding: 5px 15px;
     }
 
+    .short {
+        min-height: 50px;
+    }
+
+    .container {
+        margin: 0px;
+    }
 
 
 
