@@ -49,6 +49,13 @@ img {
     text-align: center;
 }
 
+h1 {
+    font-family: 'Lemon', cursive;
+    color: #a10000;
+    background-color: #F7b52b;
+    padding-left: 10px;
+}
+
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
@@ -144,9 +151,7 @@ p {
         display: inline-block;
     }
 
-    nav ul {
-        padding-left: 170px;
-    }
+
 
     nav li {
         font-size: 18px;
@@ -169,5 +174,8 @@ p {
     p.matches {
         padding: 5px 15px;
     }
+
+
+
 
 }

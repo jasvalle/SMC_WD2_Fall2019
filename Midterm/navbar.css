@@ -76,8 +76,9 @@ nav ul a {
         font-size: 15px;
     }
 
-    nav ul:first-of-type {
-        padding-left: 353px;
+    nav ul {
+        text-align: center;
+    
     }
 
     .s-title h1{
@@ -92,10 +93,6 @@ nav ul a {
 
 /*--------------------*/
 @media (min-width: 800px){
-    nav ul:first-of-type {
-        padding-left: 850px;
-    }
-
     nav ul a {
         font-size: 18px;
     }
