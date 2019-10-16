@@ -66,6 +66,9 @@ nav ul a {
     margin: 0px;
 }
 
+.logoli ul li {
+    display: none;
+}
 /*-----------------------------*/
 @media (min-width: 540px){
     nav {

@@ -16,15 +16,22 @@ header label img {
     padding-left: 10px;
 }
 
-header h1 {
-    position: relative;
-    left: 170px;
-    margin: 0px;
+.mamas img {
     display: inline-block;
-    top: -5px;
-    font-size: 15px;
-    color:#FD8E60;
-    font-family: 'Croissant One', cursive;
+    width: 18%;
+    position: relative;
+    top: -29px;
+    left: 66px;
+}
+
+.hidden {
+    height: 0px;
+}
+
+.mamas {
+    margin: 0px;
+    padding: 0px;
+    height: 0px;
 }
 
 nav {
@@ -62,3 +69,12 @@ nav ul a {
 
 }
 
+.logoli {
+    display: none;
+}
+
+@media(min-width: 540px) {
+    .header {
+        padding-bottom: 20px;
+    }
+}
