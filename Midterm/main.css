@@ -1,196 +1,206 @@
-@import "colors.css";
 @import "layout.css";
 @import "navbar.css";
-@import url('https://fonts.googleapis.com/css?family=Lemon|Montserrat:300i,400,800&display=swap');
+@import "footer.css";
+@import url('https://fonts.googleapis.com/css?family=Croissant+One|Raleway:300,400,600&display=swap');
 
-/*verticle align*/
-.content-table {
-    display: table;
-}
 
-.content-table p {
-    display: table-cell;
-    vertical-align: middle;
-}
 
 body {
+    width: 100%;
     margin: auto;
 }
 
-main {
-    margin: auto;
-    width: 90%;
+h1 {
+    text-align: center;
+    margin: 20px 0px 10px 0px;
+    color: #FD8E60;
+    font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+    color: #FD8E60;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.text-float h1 {
+    font-family: 'Croissant One', cursive;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    top: 152px;
+    text-shadow: 1px 2px white, 0 3px 5px black;
+    margin-top: -200px;
+}
+
+.floater-section ul li:first-of-type {
+    margin-top: 20px;
 }
 
 img {
     width: 100%;
 }
 
-.titlemobile {
-    position: relative;
-}
-
-.titlemobile h1 {
-    font-family: 'Lemon', cursive;
-    position: absolute;
-    left: 2px;
-    top: -214px;
-    color: #F7b52b;
-    font-size: 35px;
-    padding: 0px;
-    margin: 0px;
-    text-align: center;
-}
-
-.sections-h1 {
-    font-family: 'Lemon', cursive;
-    color: #a10000;
-    background-color: #F7b52b;
-    text-align: center;
-}
-
-h1 {
-    font-family: 'Lemon', cursive;
-    color: #a10000;
-    background-color: #F7b52b;
-    padding-left: 10px;
-}
-
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    font-size: 25px;
-}
-
 p {
-    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    color: #1C0000;
+    font-family: 'Raleway', sans-serif;
+    line-height: 22px;
 }
 
-th, td {
-    padding: 5px 5px 5px 5px;
-    text-align: left;
+.aboutp p::first-letter {
+    padding-left: 20px;
 }
 
-th {
-    width: 50%;
+.phrase {
+    text-shadow: 0 1px 1px rgb(177, 51, 51);
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    color: #1C0000;
+    line-height: 25px;
+}
+
+ul li {
+    padding-left: 20px;
+}
+
+.pink {
+    background-color: #F4E0D9;
+}
+
+ul li p {
+    margin: 0px;
+    padding: 10px 0px;
 }
 
 
-table {
-    width: 100%;
+ul li h3 {
+    text-decoration: underline;
+    text-decoration-color: rgb(250, 134, 134);
+    margin: 0px;
+    padding: 10px 0px;
 }
 
-/*-------------------MEDIUM-------------------------*/
+.content ul li {
+    padding: 0px;
+}
+
+
+/*MEDIUM*/
 @media (min-width: 540px) {
-    h1.h1title {
-        font-size: 25px;
-    }
-    
-    h2.h2title {
-        font-size: 20px;
-        padding-top: 0px;
-
+    .header{
+    height:  35px;
     }
 
-    nav,
-    input#toggler:checked+nav {
-        display: block;
+    .mamas img {
+        width: 13%;
     }
 
-    nav ul li {
-        display: inline-block;
-        font-size: 20px;
+    .mamas {
+        padding-bottom: 15px;
+    }
+    .floater-section {
+        min-height: 120px;
     }
 
-    header label img {
+    .logo {
         display: none;
     }
 
-    input#toggler:checked+nav {
-        display: block;
-    }
-
-    main {
-        width: 90%;
-        margin:auto;
+    .logoli {
+        display: none;
     }
 
     .container {
-        margin-bottom: 20px;
+        min-height: 100px;
     }
 
-    .content {
-        padding: 20px;
+    header h1 {
+        left: 11px;
+        font-size: 25px;
+        top: -2px;
     }
+    .phrase {
+        font-size: 40px;
+    }
+    .text-float h1 {
+        font-family: 'Croissant One', cursive;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        top: 110px;
+        text-shadow: 1px 2px white, 0 3px 5px black;
+        left: 2px;
+        font-size: 29px;
+    }
+
+    .floater-section h2 {
+        margin-left: 15px;
+    }
+
+    .menu h1 {
+        margin-top: 0px;
+    }
+
+
 }
 
-/*----------------------------------*/
 @media (min-width: 800px) {
-    body {
-        height: 1000px;
+    .floater-section {
+        min-height: 250px;
     }
 
-    .title {
-        height: 150px;
-        padding-left: 200px;
-    }
-    h1.h1title {
-        font-size: 50px;
-        text-align: left;
-    }
-    
-    h2.h2title {
-        font-size: 30px;
-        padding-top: 0px;
-        text-align: left;
-    }
-
-    header label img {
+    .mamas {
         display: none;
     }
-
-    input#toggler:checked+nav {
-        display: block;
-    }
-
     nav,
     input#toggler:checked+nav {
         display: block;
     }
 
-    nav {
-        padding: 0px 10px;
-    }
     nav ul li {
         display: inline-block;
+        font-size: 20px;
     }
 
-    nav li {
-        font-size: 18px;
-        text-align: left;
+    header label img {
+        display: none;
+    }
+    
+    .logo {
+        max-width: 100px;
+        position: relative;
+        display: inline-block;
+        top: 26px;
+        margin: 0px;;
     }
 
-    main {
-        width: 70%;
-        margin:auto;
+    .logoli{
+        margin: 0px;
+        padding: 0px;
+        display: inline;
+        padding-left: 100px;
+    }
+    input#toggler:checked+nav {
+        display: block;
     }
 
-    .img-padding {
-        padding-top: 10px;
+    header h1 {
+        display: none;
     }
 
-    .container {
-        margin-bottom: 15px;
+    .hide {
+        display: none;
     }
 
-    p.matches {
-        padding: 5px 15px;
+    .menu p {
+        width: 100%;
     }
-
-    .short {
-        min-height: 50px;
-    }
-
-
-
 }

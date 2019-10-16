@@ -1,0 +1,196 @@
+@import "colors.css";
+@import "layout.css";
+@import "navbar.css";
+@import url('https://fonts.googleapis.com/css?family=Lemon|Montserrat:300i,400,800&display=swap');
+
+/*verticle align*/
+.content-table {
+    display: table;
+}
+
+.content-table p {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+body {
+    margin: auto;
+}
+
+main {
+    margin: auto;
+    width: 90%;
+}
+
+img {
+    width: 100%;
+}
+
+.titlemobile {
+    position: relative;
+}
+
+.titlemobile h1 {
+    font-family: 'Lemon', cursive;
+    position: absolute;
+    left: 2px;
+    top: -214px;
+    color: #F7b52b;
+    font-size: 35px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.sections-h1 {
+    font-family: 'Lemon', cursive;
+    color: #a10000;
+    background-color: #F7b52b;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Lemon', cursive;
+    color: #a10000;
+    background-color: #F7b52b;
+    padding-left: 10px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+th, td {
+    padding: 5px 5px 5px 5px;
+    text-align: left;
+}
+
+th {
+    width: 50%;
+}
+
+
+table {
+    width: 100%;
+}
+
+/*-------------------MEDIUM-------------------------*/
+@media (min-width: 540px) {
+    h1.h1title {
+        font-size: 25px;
+    }
+    
+    h2.h2title {
+        font-size: 20px;
+        padding-top: 0px;
+
+    }
+
+    nav,
+    input#toggler:checked+nav {
+        display: block;
+    }
+
+    nav ul li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    header label img {
+        display: none;
+    }
+
+    input#toggler:checked+nav {
+        display: block;
+    }
+
+    main {
+        width: 90%;
+        margin:auto;
+    }
+
+    .container {
+        margin-bottom: 20px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+}
+
+/*----------------------------------*/
+@media (min-width: 800px) {
+    body {
+        height: 1000px;
+    }
+
+    .title {
+        height: 150px;
+        padding-left: 200px;
+    }
+    h1.h1title {
+        font-size: 50px;
+        text-align: left;
+    }
+    
+    h2.h2title {
+        font-size: 30px;
+        padding-top: 0px;
+        text-align: left;
+    }
+
+    header label img {
+        display: none;
+    }
+
+    input#toggler:checked+nav {
+        display: block;
+    }
+
+    nav,
+    input#toggler:checked+nav {
+        display: block;
+    }
+
+    nav {
+        padding: 0px 10px;
+    }
+    nav ul li {
+        display: inline-block;
+    }
+
+    nav li {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    main {
+        width: 70%;
+        margin:auto;
+    }
+
+    .img-padding {
+        padding-top: 10px;
+    }
+
+    .container {
+        margin-bottom: 15px;
+    }
+
+    p.matches {
+        padding: 5px 15px;
+    }
+
+    .short {
+        min-height: 50px;
+    }
+
+
+
+}

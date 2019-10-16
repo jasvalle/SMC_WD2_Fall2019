@@ -5,58 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Oro's</title>
+    <title>Mama's Donuts</title>
     <link rel="stylesheet" href="main.css">
-
 </head>
 
 <body>
     <header>
-            <div class="littlemenu light-yellow">
-                    <div class="s-title">
-                        <h1>Oro's Pizza & Bakery</h1>
-                    </div>
-                </div>
         <label for="toggler">
-            <img src="pizza.png">
+            <img src="donut icon filled.png">
         </label>
+        <div class="mamas">
+        <img src="mamas.png">
+        </div>
         <input type="checkbox" id="toggler">
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="menu.html">Menu</a></li>
+                <li class="hide"><a href="index.html">Home</a></li>
+                <li class="logoli"><a href="index.html"><img class="logo" src="mamas donuts.png"></a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="menu.html">Our Menu</a></li>
+
             </ul>
         </nav>
     </header>
 
     <main>
+        <picture>
+            <source media="(min-width: 800px)" srcset="homelg.jpg">
+            <source media="(min-width: 540px)" srcset="homemd.jpg">
+            <img src="home.jpg">
+        </picture>
+        <h1 class="phrase">Donut Mess With Mama's Donuts</h1>
         <div class="container">
-            <div class="floater-section width-md-100 width-lg-100">
-                <picture>
-                    <source media="(min-width: 800px)" srcset="profilems.jpg">
-                    <source media="(min-width: 540px)" srcset="profilems.jpg">
-                    <img src="profile.jpg" alt="Flowers" alt="Couple interlocking fingers with anchor tatoos">
-                </picture>
-                <h1 class="sections-h1">Specials</h1>
-                <h2>$19.99 Lots of Food</h2>
-                <p>1x : Bacon ipsum dolor amet corned beef ham meatloaf turkey tongue pork loin chicken ground round
-                    boudin short ribs andouille flank. </p>
-                <p>2x: Short ribs tenderloin jerky shoulder porchetta t-bone pastrami filet mignon kielbasa. Tongue
-                    doner venison biltong pork pancetta burgdoggen. </p>
-                <p>1x:Jerky chicken spare ribs, flank beef ribs pork loin tenderloin cow brisket buffalo frankfurter
-                    salami corned beef filet mignon.</p>
-                <h2>$10.99 Fair Priced Food</h2>
-                <p>1x : Bacon ipsum dolor amet corned beef ham meatloaf turkey tongue pork loin chicken ground round
-                    boudin short ribs andouille flank. </p>
-                <p>1x:Jerky chicken spare ribs, flank beef ribs pork loin tenderloin cow brisket buffalo frankfurter
-                    salami corned beef filet mignon.</p>
+            <div class="floater-section text-float width-md-33">
+                <div class="content">
+                    <div class="hidden">
+                    <h1>Happy Halloween</h1>
+                    </div>
+                    <img src="1halloween donuts.jpg">
+                </div>
             </div>
-            <div class="floater-section width-md-50">
-                <img src="pizzatime1.png" alt="pizza salad and other food items on a table">
+            <div class="floater-section width-md-33">
+                <div class="content">
+                    <img src="circle banner.png">
+                </div>
+            </div>
+            <div class="floater-section text-float width-md-33">
+                <div class="content">
+                    <div class="hidden">
+                    <h1>Made Fresh Daily</h1>
+                    </div>
+                    <img src="dough.jpg">
+                </div>
+            </div>
+            <div class="floater-section width-md-100">
+                <div class="content">
+                    <img src="illustrator.jpg">
+                </div>
             </div>
         </div>
+
     </main>
+    <footer>
+        <ul>
+            <li>(818) 997-1654</li>
+            <li><a href="https://www.facebook.com/Mamas-Donuts-117940471565345/">Facebook</li>
+            <li><a href="https://www.yelp.com/biz/mamas-donuts-van-nuys">Yelp</a></li>
+        </ul>
+        <h1> Hours: </h1>
+        <ul class="hours">
+            <li>Monday-Saturday: 4AM-6PM</li>
+            <li>Sunday: 4AM-2PM</li>
+
+        </ul>
+    </footer>
 
 </body>
 
