@@ -190,12 +190,16 @@ ul li h3 {
     header label img {
         display: none;
     }
+
+    nav {
+        height: 53px;
+    }
     
     .logo {
-        max-width: 100px;
+        max-width: 78px;
         position: relative;
         display: inline-block;
-        top: 26px;
+        top: 8px;
         margin: 0px;;
     }
 
@@ -219,5 +223,10 @@ ul li h3 {
 
     .menu p {
         width: 100%;
+    }
+
+    .raise {
+        position: relative;
+        top: -13px;
     }
 }
