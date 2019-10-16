@@ -92,6 +92,21 @@ ul li h3 {
     padding: 0px;
 }
 
+.aboutlocation p {
+    padding-left: 16px;
+}
+
+.menuh1 h1 {
+    margin: 0px;
+}
+
+ul li h3 {
+    padding-top: 0px;
+}
+
+.contentmenumobile {
+    margin-bottom: 35px;
+}
 
 /*MEDIUM*/
 @media (min-width: 540px) {
@@ -149,12 +164,14 @@ ul li h3 {
         margin-top: 0px;
     }
 
-
+    .contentmenu {
+        margin-bottom: 50px;
+    }
 }
 
 @media (min-width: 800px) {
     .floater-section {
-        min-height: 250px;
+        min-height: 170px;
     }
 
     .mamas {
@@ -186,7 +203,7 @@ ul li h3 {
         margin: 0px;
         padding: 0px;
         display: inline;
-        padding-left: 100px;
+        padding-left: 150px;
     }
     input#toggler:checked+nav {
         display: block;
