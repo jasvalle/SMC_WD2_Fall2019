@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <button id="colorButton">Color Me!</button>
+        </nav>
+    </header>
+    <main>
+        <div id="contentmain">
+            <h1>
+                Hello, World!
+            </h1>
+        </div>
+    </main>
+    <footer></footer>
+    <script>
+        document.getElementById("colorButton").addEventListener("click", function(){
+            console.log("it!");
+            var maincontent = document.getElementById("contentmain");
+            var redComponent = Math.random()*255;
+            var greenComponent = Math.random()*255;
+            var blueComponent = Math.random()*255;
+              
+            console.log("Blue: " + blueComponent);
+            console.log("Red: " + redComponent);
+            console.log("Green: " + greenComponent);
+
+            var compRGBString = "rgb("+ redComponent + ","  + greenComponent + "," + blueComponent +")";
+
+            console.log(compRGBString);
+
+            maincontent.style.backgroundColor = compRGBString;
+        })
+
+        document.getElementById("contentmain").style.backgroundColor = "rgb(255, 0, 0)";
+
+        alert("This is our very FirstJava script written!");
+    </script>
+
+</body>
+
+</html>
