@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <section>
+            <img id="imgOne" src="https://mauisfinestflowers.com/wp-content/uploads/2014/12/Maui-Basket-400x400.jpg" alt="tropical flowers in a metal vase">
+            <button id="imgToggle">Switch!</button>
+        </section>
+        <section>
+            <form action="" method="GET">
+                <select id="make">
+                    <option value="bmw">BMW</option>
+                    <option value="audi">Audi</option>
+                    <option value="kia">Kia</option>
+                </select>
+
+                <select id="model">
+
+                </select>
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+    <script>
+            var img2Url = "https://benwhiteflorist.com/wp-content/uploads/2019/02/Sultry-rs-400x400.jpg";
+            var img2Alt = "a boquet of roses";
+
+            var switchingImage = document.getElementById("imgOne");
+
+            var image1Url = switchingImage.src;
+            var image1Alt = switchingImage.alt;
+
+        document.getElementById("imgToggle").addEventListener("click", function() {
+            console.log(img2Url);
+            console.log(switchingImage.src);
+
+            if(switchingImage.src === img2Url) {
+                console.log('case 1')
+                switchingImage.src = image1Url;
+                switchingImage.alt = image1Alt;
+            } 
+            else{
+                console.log('case 2')
+                switchingImage.src = img2Url;
+                switchingImage.alt = img2Alt;
+            }
+
+        })
+        
+        var makeSelect = document.getElementById("make");
+        var modelSelect = document.getElementById("model");
+        
+        makeSelect.addEventListener('change', function(){
+            if(makeSelect.value === 'bmw'){
+                 modelSelect.innerHTML = '<option value="M3">M3</option>\
+                                    <option value="M5">M5</option>\
+                                    <option value ="M7">M7</option>';
+            }
+            if(makeSelect.value === 'audi'){
+                modelSelect.innerHTML = '<option value="S4">S4</option>\
+                                    <option value="R8">R8</option>\
+                                    <option value ="A4">A4</option>';
+            }      
+            if(makeSelect.value === 'kia'){
+                modelSelect.innerHTML = '<option value="Sportage">Sportage</option>\
+                                    <option value="Sorrento">Sorrento</option>\
+                                    <option value ="Sedona">Sedona</option>';
+            }           
+        })
+    </script>
+</body>
+
+</html>
