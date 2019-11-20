@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: azure;
+            height: 200px;
+            width: 500px;
+        }
+
+        main {
+            width: 700px;
+            margin: auto;
+        }
+
+        img {
+            max-width: 150px;
+            display: inline-block;
+        }
+
+        .floater-section {
+            float: left;
+            padding: 5px;
+        }
+
+        .container::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <form action="" method="POST">
+            <select id="FX">
+                <option value="" default></option>
+                <option value="flowers">FLowers</option>
+                <option value="food">Food</option>
+                <option value="puppies">Puppies</option>
+            </select>
+            <input type="submit" value="send">
+        </form>
+    </header>
+    <main>
+        <section class="notification-area"></section>
+        <section class="container">
+            <div class="floater-section"> <img
+                    src="https://www.provenwinners.com/sites/provenwinners.com/files/imagecache/500x500/ifa_upload/gaura_karalee_petite_pink_improved_tag.jpg">
+            </div>
+            <div class="floater-section"> <img
+                    src="https://www.seedsavers.org/site/img/seo-images/1066-calendula-mixture-flower.jpg"></div>
+            <div class="floater-section"><img
+                    src="https://www.seedsavers.org/site/img/seo-images/0997-historic-pansies-mix-flower.jpg">
+            </div>
+        </section>
+        
+        <section class="container">
+            <div class="floater-section"> <img
+                    src="https://www.kimscravings.com/wp-content/uploads/2018/12/506A0349-3-500x500.jpg"> </div>
+            <div class="floater-section"> <img
+                    src="https://www.yellowblissroad.com/wp-content/uploads/2019/03/One-Por-Cheesy-Sausage-Pasta-3-of-5-500x500.jpg"></div>
+            <div class="floater-section"><img
+                    src="https://www.dinneratthezoo.com/wp-content/uploads/2017/12/meal-prep-burrito-bowls-500x500.jpg">
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="floater-section"> <img
+                    src="https://www.pdsa.org.uk/media/6854/dogue-de-bordeaux-puppy-gallery-6-min.jpg?anchor=center&mode=crop&quality=100&height=500&bgcolor=fff&rnd=132061256340000000">
+            </div>
+            <div class="floater-section"> <img
+                    src="https://www.iandloveandyou.com/assets/pet-heroes/puppy-mobile.jpg">
+            </div>
+            <div class="floater-section"><img
+                    src="https://chadwicksgoldens.com/wp-content/uploads/2015/02/D8H_0766_9-500x500.jpg">
+            </div>
+        </section>
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

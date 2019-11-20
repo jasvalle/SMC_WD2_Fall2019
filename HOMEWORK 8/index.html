@@ -97,13 +97,12 @@
 <body>
     <header>
         <label for="toggler">
-            <img id="imgOne"
-                src="https://icon-library.net/images/jquery-icon-png/jquery-icon-png-21.jpg">
+            <img id="imgOne" src="https://icon-library.net/images/jquery-icon-png/jquery-icon-png-21.jpg">
         </label>
         <h1>Manipulation .css() & .replaceWith()</h1>
     </header>
     <main>
-        <div>
+        <div class="size-div">
             <p>Click Me!</p>
         </div>
         <button class="blue-button">Blue</button>
@@ -113,13 +112,28 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script>
-        $("div").on("click", function () {
+        var limiter = function () {
+            if (parseFloat(value) > 500) {
+                return parseFloat(value);
+            }
+            return parseFloat(value) * 1.2;
+
+        };
+        $(".size-div").click(function () {
             $(this).css({
                 width: function (index, value) {
-                    return parseFloat(value) * 1.2;
+                    if (parseFloat(value) > 500) {
+                        return parseFloat(value);
+                    } else {
+                        return parseFloat(value) * 1.2;
+                    }
                 },
                 height: function (index, value) {
-                    return parseFloat(value) * 1.2;
+                    if (parseFloat(value) > 500) {
+                        return parseFloat(value)
+                    } else {
+                        return parseFloat(value) * 1.2;
+                    }
                 }
             });
         });
