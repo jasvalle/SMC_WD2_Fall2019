@@ -10,22 +10,23 @@
         .container {
             background-color: azure;
             height: 200px;
-            width: 500px;
+            width: 700px;
         }
 
         main {
             width: 700px;
             margin: auto;
+            height: 900px;
         }
 
         img {
-            max-width: 150px;
+            max-width: 100%;
             display: inline-block;
         }
 
         .floater-section {
             float: left;
-            padding: 5px;
+            width: 33.33333%;
         }
 
         .container::after {
@@ -33,52 +34,67 @@
             clear: both;
             display: table;
         }
+
+        header {
+            padding: 20px;
+            padding-left: 120px;
+            background-color: pink;
+            margin-bottom: 20px;
+        }
+
+        .h1-header {
+            margin-top: 0px;
+        }
     </style>
 </head>
 
 <body>
     <header>
+        <h1 class="h1-header">Image Gallery</h1>
         <form action="" method="POST">
             <select id="FX">
                 <option value="" default></option>
-                <option value="flowers">FLowers</option>
+                <option value="show">Show All</option>
+                <option value="flowers">Flowers</option>
                 <option value="food">Food</option>
                 <option value="puppies">Puppies</option>
+
             </select>
             <input type="submit" value="send">
         </form>
     </header>
     <main>
         <section class="notification-area"></section>
-        <section class="container">
-            <div class="floater-section"> <img
+        <section class="container container-fl">
+            <div class="floater-section"> <img class="img-flowers show"
                     src="https://www.provenwinners.com/sites/provenwinners.com/files/imagecache/500x500/ifa_upload/gaura_karalee_petite_pink_improved_tag.jpg">
             </div>
-            <div class="floater-section"> <img
+            <div class="floater-section"> <img class="img-flowers show"
                     src="https://www.seedsavers.org/site/img/seo-images/1066-calendula-mixture-flower.jpg"></div>
-            <div class="floater-section"><img
+            <div class="floater-section"><img class="img-flowers show"
                     src="https://www.seedsavers.org/site/img/seo-images/0997-historic-pansies-mix-flower.jpg">
             </div>
         </section>
-        
-        <section class="container">
-            <div class="floater-section"> <img
+
+        <section class="container container-fo">
+            <div class="floater-section"> <img class="img-food show"
                     src="https://www.kimscravings.com/wp-content/uploads/2018/12/506A0349-3-500x500.jpg"> </div>
-            <div class="floater-section"> <img
-                    src="https://www.yellowblissroad.com/wp-content/uploads/2019/03/One-Por-Cheesy-Sausage-Pasta-3-of-5-500x500.jpg"></div>
-            <div class="floater-section"><img
+            <div class="floater-section"> <img class="img-food show"
+                    src="https://www.yellowblissroad.com/wp-content/uploads/2019/03/One-Por-Cheesy-Sausage-Pasta-3-of-5-500x500.jpg">
+            </div>
+            <div class="floater-section"><img class="img-food show"
                     src="https://www.dinneratthezoo.com/wp-content/uploads/2017/12/meal-prep-burrito-bowls-500x500.jpg">
             </div>
         </section>
 
-        <section class="container">
-            <div class="floater-section"> <img
+        <section class="container container-pu">
+            <div class="floater-section"> <img class="img-puppies show"
                     src="https://www.pdsa.org.uk/media/6854/dogue-de-bordeaux-puppy-gallery-6-min.jpg?anchor=center&mode=crop&quality=100&height=500&bgcolor=fff&rnd=132061256340000000">
             </div>
-            <div class="floater-section"> <img
+            <div class="floater-section"> <img class="img-puppies show"
                     src="https://www.iandloveandyou.com/assets/pet-heroes/puppy-mobile.jpg">
             </div>
-            <div class="floater-section"><img
+            <div class="floater-section"><img class="img-puppies show"
                     src="https://chadwicksgoldens.com/wp-content/uploads/2015/02/D8H_0766_9-500x500.jpg">
             </div>
         </section>

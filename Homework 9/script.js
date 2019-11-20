@@ -1,25 +1,35 @@
-$('select#FX').change(function () {
-    var currentSelection = $(this).val();
-    console.log(currentSelection);
-    
-    if (currentSelection === 'flowers') {
-        $('.flower-img').show(1000);
-    }
+$(document).ready(function () {
+    1
+        $('select#FX').change(function () {
+        var currentSelection = $(this).val();
+
+        if (currentSelection === 'show') {
+            $('.container-fo').show(1000);
+            $('.container-fl').show(1000);
+            $('.container-pu').show(1000);
 
 
-    if (currentSelection === 'hide') {
+        }
 
-        $('.box').hide(1000 ,fucntion() 
-                $('main section.notification-area').append('<p>Please Fill ' + $(this).attr('id') + ' out</p>')
-            
+        if (currentSelection === 'flowers') {
+            $('.container-fl').show(1000);
+            $('.container-pu').slideUp(1000);
+            $('.container-fo').slideUp(1000);
 
+        }
 
-            if (currentSelection === 'slideup') {
-                $('.box').slideUp(1000);
-            }
+        if (currentSelection === 'food') {
+            $('.container-fo').show(1000);
+            $('.container-fl').slideUp(1000);
+            $('.container-pu').slideUp(1000);
 
-            if (currentSelection === 'slidedown') {
-                $('.box').slideDown(1000);
-            }
-        })
+        }
+
+        if (currentSelection === 'puppies') {
+            $('.container-pu').show(1000);
+            $('.container-fl').slideUp(1000);
+            $('.container-fo').slideUp(1000);
+
+        }
+    })
 });
