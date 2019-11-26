@@ -25,23 +25,47 @@ header {
     margin: 10px 0px 5px 30px;
 }
 
-.nav p {
+.type p {
     padding: 0px 36px 20px 36px;
     color: rgb(173, 199, 173);
     margin: 0px;
+    text-align: left;
 }
 
-.container {
+.container1 {
     display: flex;
     flex-direction: column;
 }
 
-.container img {
+img {
     max-width: 100%;
 }
 
+
+
 .content {
-    padding-bottom: 10px;
+    max-width: 100%;
+}
+
+.pls {
+    padding: 5px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    text-align: center;
+}
+
+.box1 {
+    max-width: 100%;
+}
+
+.box2 {
+    max-width: 100%;
 }
 
 h1{
@@ -49,6 +73,7 @@ h1{
     padding-top: 20px;
     color: #2f3b2f;
 }
+
 /*MEDIUM SCREENS*/
 @media (min-width: 540px) {
 
@@ -71,18 +96,11 @@ h1{
         margin-bottom: 35px;
     }
 
-    nav {
+    .type {
         display: flex;
         align-items: center;
     }
 
-    ul {
-        display: flex;
-    }
-
-    li {
-        padding: 0px 20px;
-    }
 
     .logo {
         order: 3;
@@ -110,32 +128,41 @@ h1{
         height: auto;
         padding-bottom: 20px;
     }
- 
-    .container p {
-        margin-top: 0px;
-    }
-
-    .container {
+    .container1 {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        align-content: stretch;
     }
+    
+    img {
+        max-width: 100%;
+    }
+    
 
     .content {
+        max-width: 33.3333%;
+    }
+    
+    .pls {
+        padding: 5px;
+    }
+    
+    .container2 {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        max-width: 33.333%;
+        align-content: stretch;
     }
-
-    .content img {
-        padding: 10px;
+  
+    
+    .box1 {
+        max-width: 25%;
     }
-
-    .last {
-        max-width: 66.667%;
+    
+    .box2 {
+        max-width: 75%;
     }
-
 }
 
 @media (min-width: 800px) {
@@ -161,29 +188,8 @@ h1{
         height: auto;
     }
 
-    .container p {
-        margin-top: 0px;
-    }
-
     body{
         height: 1000px;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .content {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        max-width: 33.333%;
-    }
-
-    .last {
-        max-width: 66.667%;
     }
 
 }
