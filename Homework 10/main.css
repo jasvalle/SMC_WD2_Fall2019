@@ -136,7 +136,7 @@ h1{
     }
     
     img {
-        max-width: 100%;
+        width: 100%;
     }
     
 
@@ -157,11 +157,13 @@ h1{
   
     
     .box1 {
-        max-width: 25%;
+        flex-grow: 1;
+        flex-basis: min-content;
     }
     
     .box2 {
-        max-width: 75%;
+        flex-grow: 3;
+        flex-basis: min-content;
     }
 }
 
