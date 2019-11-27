@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <label for="toggler">
+            <img id="imgOne" src="beelogo-04.png">
+        </label>
+        <input type="checkbox" id="toggler">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Blog</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container" id="photo"></div>
+        <h1>Gemstones</h1>
+        <form action="" method="GET">
+            <select id="gemstone">
+                <option value="saph">Sapphire</option>
+                <option value="opal">Opal</option>
+                <option value="onyx">Onyx</option>
+            </select>
+        </form>
+        <p id="text"></p>
+    </main>
+</body>
+
+</html>
+<script>
+    var gemSelect = document.getElementById('gemstone');
+    var textChoice = document.getElementById('text');
+
+    gemSelect.addEventListener('change', function () {
+        if (gemSelect.value === 'saph') {
+            textChoice.innerHTML =
+                'Sapphire is one of the two gem-varieties of corundum, the other being ruby (defined as corundum in a shade of red). Although blue is the best-known sapphire color, they occur in other colors, including gray and black, and they can be colorless. A pinkish orange variety of sapphire is called padparadscha.';
+        }
+        if (gemSelect.value === 'opal') {
+            textChoice.innerHTML =
+                'Gem-quality opal is one of the most spectacular gemstones. A single stone can flash every color of the spectrum with an intensity and quality of color that can surpass the "fire" of diamond.';
+        }
+        if (gemSelect.value === 'onyx') {
+            textChoice.innerHTML =
+                'Onyx is a gemstone whose description can have several connotations. Its most accepted gemstone definition describes a solid black Chalcedony, or a banded or layered black and white Chalcedony.';
+        }
+    })
+
+    var img2Url =
+        "asset 1.png";
+    var switchingImage = document.getElementById("imgOne");
+    var image1Url = switchingImage.src;
+    var image1Alt = switchingImage.alt;
+
+    document.getElementById("imgOne").addEventListener("click", function () {
+        console.log(img2Url);
+        console.log(switchingImage.src);
+
+        if (switchingImage.src === img2Url) {
+            console.log('case 1')
+            switchingImage.src = image1Url;
+            switchingImage.alt = image1Alt;
+        } else {
+            console.log('case 2')
+            switchingImage.src = img2Url;
+            switchingImage.alt = img2Alt;
+        }
+
+    })
+</script>
