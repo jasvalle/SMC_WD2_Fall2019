@@ -29,15 +29,16 @@ main {
 
 
 .header-image-space {
-    height: 190px;
+    height: 150px;
 }
 
 .logo-merge {
-    position: absolute;
-    top: 268px;
+    position: relative;
+    top: -255px;
     width: 329px;
-    left: 20px;
+    left: 24px;
     z-index: 0;
+    margin-bottom: -249px;
 }
 
 .cotainer {
@@ -45,6 +46,12 @@ main {
     width: 100%;
     flex-direction: column;
     padding: 20px;
+}
+
+.LACBA {
+    font-size: 33px;
+    padding-top: 0px;
+    line-height: 43px;
 }
 
 h1 {
@@ -82,7 +89,7 @@ h3 {
 
 p {
     padding: 0px 23px;
-    line-height: 24px;
+    line-height: 25px;
     font-size: 17px;
     font-family: 'Raleway', sans-serif;
 }
@@ -108,6 +115,10 @@ p::first-letter {
 
 .blog-preview h4 {
     margin: 0px;
+}
+
+.blog h2 {
+    margin-top: 0px;
 }
 
 .quote {
