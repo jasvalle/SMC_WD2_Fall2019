@@ -1,18 +1,18 @@
 @import url('nav.css');
 
 body {
-    font-family: "Lato", sans-serif;
     width: 100%;
     margin: auto;
     height: auto;
-    background: #fff2dc;
+    background-color: #fff9ee;
 
 }
 
 main {
-    background: #fff2dc;
-}
+    width: 100%;
+    background-color: #fff9ee;
 
+}
 
 .mobile-landing h1 {
     position: absolute;
@@ -27,50 +27,20 @@ main {
     line-height: 61px;
 }
 
-.space {
-    height: 334.5px;
-}
 
-.space2 {
+.header-image-space {
     height: 190px;
 }
 
-h2 {
-    font-family: 'Playfair Display', serif;
-    margin: 0px;
-    padding: 20px;
-    text-align: center;
-    font-size: 30px;
-    color: #48acf0;
-}
-
-h3 {
-    color: #48acf0;
-    text-align: center;
-    margin: 0px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-}
 
 
-.divider {
+
+.logo-merge {
     position: absolute;
     top: 268px;
     width: 329px;
     left: 20px;
     z-index: 0;
-}
-
-p {
-    padding: 0px 23px;
-    line-height: 24px;
-    font-size: 17px;
-    font-family: 'Raleway', sans-serif;
-}
-
-p::first-letter {
-    font-size: 25px;
-    padding-left: 20px;
 }
 
 .cotainer {
@@ -85,6 +55,16 @@ h1 {
     padding: 0px 20px;
 }
 
+h2 {
+    font-family: 'Playfair Display', serif;
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: #48acf0;
+}
+
+
 h4 {
     font-family: 'Raleway', sans-serif;
     padding: 0px 20px;
@@ -94,6 +74,36 @@ h3 {
     padding: 0px 20px;
     text-align: left;
     color: rgba(0, 0, 0, 0.562);
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+p {
+    padding: 0px 23px;
+    line-height: 24px;
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
+}
+
+p::first-letter {
+    font-size: 25px;
+    padding-left: 20px;
+}
+
+.blog-preview h1 {
+    margin-bottom: 0px;
+}
+
+.blog-preview h3 {
+    margin: 0px;
+}
+
+.quote {
+    color: #48acf0;
+    text-align: center;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
 }
 
 a {
@@ -104,15 +114,13 @@ a {
 }
 
 footer {
-    background-color: #fff2dc;
     margin-top: 25px;
 }
 
 footer li {
     padding: 20px 0px;
     list-style: none;
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
     text-shadow: none;
     text-align: center;
     font-size: 10px;
@@ -123,19 +131,7 @@ footer li {
 
 .blog-divider {
     max-width: 90%;
-
-display: block;
-
-margin: auto;
-
-padding: 18px 0px 13px 0px;
-}
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-
-    .sidenav a {
-        font-size: 18px;
-    }
+    display: block;
+    margin: auto;
+    padding: 18px 0px 13px 0px;
 }
