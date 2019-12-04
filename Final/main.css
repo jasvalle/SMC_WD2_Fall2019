@@ -1,87 +1,141 @@
+@import url('nav.css');
+
 body {
+    font-family: "Lato", sans-serif;
     width: 100%;
     margin: auto;
+    height: auto;
+    background: #fff2dc;
+
 }
 
 main {
-    width: 70%;
-    padding: 20px;
-    margin: auto;
-    background-color: rgb(176, 184, 255);
-    height: 550px;
-
-}
-header {
-    background-color: gold;
-    padding: 5px;
-    margin-bottom: 30px;
+    background: #fff2dc;
 }
 
 
-header label img {
-    width: 60px;
-    height: auto;
-    margin: 10px 0px 5px 10px;
-}
-
-
-nav {
-    padding: 0px 30px 0px 20px;
-    display: none;
-}
-
-input#toggler:checked+nav {
-    display: block;
-
-}
-
-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-nav ul {
-    list-style: none;
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 0px;
-}
-
-nav ul li {
-    display: inline-block;
-}
-
-
-nav li {
-    margin: 10px;
-    padding: 5px 0px;
-    color: white;
-}
-
-header input#toggler {
-    display: none;
-
-}
-
-h1 {
+.mobile-landing h1 {
+    position: absolute;
+    top: 180px;
+    color:white;
+    width: 343px;
+    left: 18px;
+    text-shadow: 2px 2px 2px black;
+    font-size: 35px;
+    font-family: 'Playfair Display', serif;
     text-align: center;
-    margin-bottom: 0px;
-    color: #0f58b7;}
+    line-height: 61px;
+}
 
-p::first-letter {
-    padding-left: 40px;
+.space {
+    height: 334.5px;
+}
+
+.space2 {
+    height: 190px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: #48acf0;
+}
+
+h3 {
+    color: #48acf0;
+    text-align: center;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+
+.divider {
+    position: absolute;
+    top: 268px;
+    width: 329px;
+    left: 20px;
+    z-index: 0;
 }
 
 p {
-    font-size: 25px;
-    line-height: 37px;
+    padding: 0px 23px;
+    line-height: 24px;
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
 }
 
-.container {
-    height: 200px;
+p::first-letter {
+    font-size: 25px;
+    padding-left: 20px;
+}
+
+.cotainer {
+    display: flex;
     width: 100%;
-    background-image: url("https://66.media.tumblr.com/ad6d1356ccca1400131423979a7dec5b/tumblr_n9wwlyIn1q1rg90gro2_1280.jpg");
-    background-size: cover;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    padding: 0px 20px;
+}
+
+h4 {
+    font-family: 'Raleway', sans-serif;
+    padding: 0px 20px;
+}
+
+h3 {
+    padding: 0px 20px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.562);
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    color: #48acf0;
+    text-decoration-line: underline;
+}
+
+footer {
+    background-color: #fff2dc;
+    margin-top: 25px;
+}
+
+footer li {
+    padding: 20px 0px;
+    list-style: none;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    text-shadow: none;
+    text-align: center;
+    font-size: 10px;
+    width: 250px;
+    margin: auto;
+    padding: 5px;
+}
+
+.blog-divider {
+    max-width: 90%;
+
+display: block;
+
+margin: auto;
+
+padding: 18px 0px 13px 0px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
 }

@@ -1,0 +1,125 @@
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: gold;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.sidenav a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.sidenav a:hover {
+    color: darkorange;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+ul {
+    padding: 0px;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+button {
+    display: inline-block;
+    padding: 5px 20px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 2em;
+    background-color: #48acf0;
+    text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    filter: drop-shadow(1px 2px 3px #7d670f);
+}
+
+li {
+    padding: 20px 0px;
+    list-style: none;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    text-shadow: 2px 1px 3px black;
+}
+
+.inside-nav-logo img {
+    width: 150px;
+}
+
+.mobile-nav {
+    position: fixed;
+    z-index: 1;
+}
+
+.mobile-nav img {
+    width: 45px;
+    padding: 20px;
+    filter: drop-shadow(2px 4px 3px black);
+}
+
+.nav-top img {
+    position: fixed;
+    z-index: -1;
+}
+
+li {
+    padding: 20px 0px;
+    list-style: none;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    text-shadow: 2px 1px 3px black;
+}
+
+.inside-nav-logo img {
+    width: 150px;
+}
+
+.mobile-nav {
+    position: fixed;
+    z-index: 1;
+}
+
+.mobile-nav img {
+    width: 45px;
+    padding: 20px;
+    filter: drop-shadow(2px 4px 3px black);
+}
+
+.nav-top img {
+    position: fixed;
+    z-index: -1;
+}
+
+button {
+    display: inline-block;
+    padding: 5px 20px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 2em;
+    background-color: #48acf0;
+    text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    filter: drop-shadow(1px 2px 3px #7d670f);
+}
