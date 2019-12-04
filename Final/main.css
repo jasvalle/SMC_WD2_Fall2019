@@ -32,9 +32,6 @@ main {
     height: 190px;
 }
 
-
-
-
 .logo-merge {
     position: absolute;
     top: 268px;
@@ -93,6 +90,16 @@ p {
 p::first-letter {
     font-size: 25px;
     padding-left: 20px;
+}
+
+.para-small {
+    font-size: 15px;
+    text-align: center;
+}
+
+.para-small::first-letter {
+    font-size: 15px;
+    padding-left: 0px;
 }
 
 .blog-preview h2 {
