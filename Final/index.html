@@ -11,26 +11,38 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500i,700&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <nav id="mySidenav" class="sidenav">
-            <ul>
-                <li><a class="closebtn" onclick="closeNav()">&times;</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><button><a href="donate.html">Donate</a></button></li>
-                <li class="inside-nav-logo"><img src="logopale.png"></li>
-            </ul>
-        </nav>
-        <span class="mobile-nav" onclick="openNav()"><img src="whitenav.png"></span>
-        <div class="mobile-landing">
-            <div class="nav-top">
-                <img src="beehive1.jpg">
-            </div>
+<header>
+    <div class="lg-nav">
+        <ul>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="something"><a href="index.html"><img class="logo" src="logodark.png"></a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="donate.html">Donate</a></li>
+
+        </ul>
+    </div>
+    <nav id="mySidenav" class="sidenav">
+        <ul>
+            <li><a class="closebtn" onclick="closeNav()">&times;</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><button><a href="donate.html">Donate</a></button></li>
+            <li class="inside-nav-logo"><img src="logopale.png"></li>
+        </ul>
+    </nav>
+    <span class="mobile-nav" id="sideNavToggle"><img src="whitenav.png"></span>
+    <div class="mobile-landing">
+        <div class="nav-top">
+            <img src="beeelarge.jpg">
         </div>
-        <div class="nav-space"></div>
-    </header>
+    </div>
+    <div class="nav-space"></div>
+</header>
+
+<body>
+
     <main>
         <div class="header-image-space"></div>
         <img class="logo-merge" src="logopale.png">
@@ -46,7 +58,7 @@
                 support
                 honeybee research, and adhering to best management practices for the keeping of bees.</p>
 
-            <img src="quote.png">
+            <img class="field" src="quote.png">
             <p>“When California was wild, it was one sweet bee garden throughout its entire length,
                 north and south, and all the way across from the snowy Sierra to the ocean.” </p>
 

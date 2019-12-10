@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blog</title>
+    <title>Donate</title>
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500i,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
     <header>
         <div class="lg-nav">
             <ul>
@@ -45,43 +44,41 @@
     <main>
         <div class="header-image-space"></div>
         <img class="logo-merge" src="logopale.png">
-        <div class="container blog-preview blog">
-            <h2>2019 LACBA Annual Holiday Dinner</h2>
-            <h4>December 02, 2019</h4>
-            <p class="para-small">2019 LACBA Annual Holiday Dinner
-                at the Beautiful Pickwick Gardens!
-                1001 W. Riverside Dr,
-                Burbank, CA 91506
-            </p>
-            <p class="para-small">
-                <a href="http://www.pickwickgardensconferencecenter.com/location">(Conference Center - Directions &
-                    Map)</a>
-            </p>
-            <p class="para-small">
-                We’re in The Rose Garden Room
-                Enter where the sign says “Pickwick Ice Center Entrance.”
-                It will direct you to the rear of the complex where The Rose Garden Room is located.
-            </p>
-            <p class="para-small">
-                Monday, December 2, 2019
-                Time: 6-9pm
-            </p>
-            <p>We are excited to announce our 2019 LACBA Annual Holiday Dinner. This is the time of year when we get
-                together to kick back, relax, and talk about anything and everything, including…BEES! Our Holiday Dinner
-                is a family friendly open event - feel free to bring your spouse, partner, kids and friends. We will
-                hold our largest RAFFLE of the year and present the Golden Hive Tool Award.</p>
 
-            <p>We will have a guest speaker from CSU Channel Islands.</p>
-            <p> Thank you to Doug Noland, LACBA Member, for providing a wonderful dinner from Outback Catering.
-            </p>
-            <h3><a href="blog.html">Return to Blog</a></h3>
+        <div class="donation-box">
+            <div class="donation-title">
+                <h2>Your Contribution</h2>
+            </div>
+            <div class="donation-content">
+                <div class="fields">
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" placeholder="Your name"></input>
 
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" placeholder="Your last name"></input>
+
+                    <label for="email">Your Email</label>
+                    <input type="text" id="email" placeholder="Email"></input>
+
+                    <label for="amount">Donation Amount</label>
+                    <input type="text" id="amount" placeholder="$0.00"></input>
+                </div>
+                <div class="btn-container">
+                    <button class="donate-btn" id="donateBtn">Donate</button>
+                </div>
+            </div>
         </div>
-        <h3><a href="blog.html">Return to Blog</a></h3>
+        <div class="thank-box" id="thankBox">
+            <div class="message">
+                <h2>Thank you for your donation!</h2>
+                <div class="btn-container"><button class="return-btn"><a href="index.html">Return Home</a></button>
+                </div>
+            </div>
+        </div>
     </main>
+
     <footer>
         <img class="blog-divider" src="line.png">
-
         <ul>
             <li>Copyright @ 2011, 2019 Los Angeles County Beekeepers Association. All Rights Reserved. </li>
             <li> We are a 501(c)(3) non-profit organization. Funds raised through donations go to honey bee education
@@ -90,8 +87,6 @@
     </footer>
 
     <script src="script.js"></script>
-
-
 </body>
 
 </html>
