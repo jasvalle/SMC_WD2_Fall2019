@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500i,700&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="script.js"></script>
 </head>
 
@@ -30,7 +30,7 @@
         <nav id="mySidenav" class="sidenav">
             <ul>
                 <li><a class="closebtn" onclick="closeNav()">&times;</a></li>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="resources.html">Resources</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="blog.html">Blog</a></li>
@@ -233,8 +233,34 @@
                 and research.</li>
         </ul>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+        var mySidenav = document.getElementById("mySidenav");
+        var mySidenav = document.getElementById("sideNavToggle");
+
+        sideNavToggle.addEventListener("click", function () {
+            if (mySidenav.clientWidth == window.clientWidth) {
+                closeNav();
+            } else {
+                openNav();
+            }
+        });
+
+        $(".honey").click(function () {
+            if ($(".text").first().is(":hidden")) {
+                $(".text").slideDown("slow");
+            } else {
+                $(".text").slideUp();
+            }
+        });
+    </script>
 </body>
 
 </html>
