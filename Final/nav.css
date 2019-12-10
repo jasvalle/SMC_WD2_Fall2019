@@ -122,6 +122,10 @@ li {
     .inside-nav-logo img {
         width: 250px;
     }
+
+    .nav-space {
+        height: 310px;
+    }
 }
 
 @media (min-width: 800px) {

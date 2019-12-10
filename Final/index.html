@@ -11,37 +11,43 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500i,700&display=swap" rel="stylesheet">
 </head>
 
-<header>
-    <div class="lg-nav">
-        <ul>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="about.html">About</a></li>
-            <li class="something"><a href="index.html"><img class="logo" src="logodark.png"></a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="donate.html">Donate</a></li>
 
-        </ul>
-    </div>
-    <nav id="mySidenav" class="sidenav">
-        <ul>
-            <li><a class="closebtn" onclick="closeNav()">&times;</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><button><a href="donate.html">Donate</a></button></li>
-            <li class="inside-nav-logo"><img src="logopale.png"></li>
-        </ul>
-    </nav>
-    <span class="mobile-nav" id="sideNavToggle"><img src="whitenav.png"></span>
-    <div class="mobile-landing">
-        <div class="nav-top">
-            <img src="beeelarge.jpg">
-        </div>
-    </div>
-    <div class="nav-space"></div>
-</header>
 
 <body>
+    <header>
+        <div class="lg-nav">
+            <ul>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="something"><a href="index.html"><img class="logo" src="logodark.png"></a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="donate.html">Donate</a></li>
+
+            </ul>
+        </div>
+        <nav id="mySidenav" class="sidenav">
+            <ul>
+                <li><a class="closebtn" onclick="closeNav()">&times;</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><button><a href="donate.html">Donate</a></button></li>
+                <li class="inside-nav-logo"><img src="logopale.png"></li>
+            </ul>
+        </nav>
+        <span class="mobile-nav" id="sideNavToggle"><img src="whitenav.png"></span>
+        <div class="mobile-landing">
+            <div class="nav-top">
+                <picture>
+                    <source media="(min-width: 800px)" srcset="lgbee.png">
+                    <source media="(min-width: 400px)" srcset="mdbee.png">
+                    <img src="smbee.png" alt="Chris standing up holding his daughter Elva">
+                </picture>
+            </div>
+        </div>
+        <div class="nav-space"></div>
+    </header>
 
     <main>
         <div class="header-image-space"></div>
@@ -74,7 +80,7 @@
                 and research.</li>
         </ul>
     </footer>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
 

@@ -26,7 +26,9 @@
         <nav id="mySidenav" class="sidenav">
             <ul>
                 <li><a class="closebtn" onclick="closeNav()">&times;</a></li>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resources.html">Resources</a></li>
+
                 <li><a href="about.html">About</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><button><a href="donate.html">Donate</a></button></li>
@@ -36,7 +38,11 @@
         <span class="mobile-nav" id="sideNavToggle"><img src="whitenav.png"></span>
         <div class="mobile-landing">
             <div class="nav-top">
-                <img src="beeelarge.jpg">
+                <picture>
+                    <source media="(min-width: 800px)" srcset="lgbee.png">
+                    <source media="(min-width: 400px)" srcset="mdbee.png">
+                    <img src="smbee.png" alt="Chris standing up holding his daughter Elva">
+                </picture>
             </div>
         </div>
         <div class="nav-space"></div>
