@@ -177,8 +177,8 @@ footer li {
 }
 
 .donation-box {
-    width: 300px;
-    height: 400px;
+    width: 90%;
+    height: auto;
     margin: auto;
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;
@@ -215,7 +215,7 @@ footer li {
 .btn-container {
     display: flex;
     justify-content: center;
-    margin: 15px;
+    margin: 0px;
 }
 
 .donate-btn {
@@ -255,22 +255,64 @@ footer li {
     display: none;
 }
 
+fieldset {
+    border: none;
+}
+
+fieldset h2 {
+    margin: 0px 0px 10px 0px;
+    font-size: 20px;
+    padding: 0px;
+}
+
+label {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.message {
+    display: none;
+}
+
 .message h2 {
     margin-top: 20px;
     color: gold;
     text-shadow: 1px 0px 1px black;
+    text-align: center;
+}
+
+.fields {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .field {
-    margin-top: 30px;
+    margin: 20px 0px;
 }
 
 .text {
     display: none;
 }
 
+.grid-about {
+    display: grid;
+    grid-template-columns: 1fr
+}
+
+
 @media (min-width: 540px) {
-     .container {
+
+
+    .fields {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .container {
         width: 85%;
         margin: auto;
     }
@@ -323,7 +365,7 @@ footer li {
     }
 
     .donation-box {
-        width: 415px;
+        width: 80%;
     }
 
     .fields input {
@@ -331,11 +373,17 @@ footer li {
     }
 
     .thank-box {
-        width: 414px;
+        width: 80%;
         height: 245px;
-        top: -323px;  
+        top: -323px;
         margin-bottom: -281px;
 
+    }
+
+    .grid-about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
     }
 }
 
@@ -347,7 +395,7 @@ footer li {
     .header-image-space {
         display: none;
     }
-    
+
 
     main {
         width: 80%;
@@ -387,7 +435,8 @@ footer li {
     .grid-about {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-
         grid-gap: 20px;
     }
+
+
 }
