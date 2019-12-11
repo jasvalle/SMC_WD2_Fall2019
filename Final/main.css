@@ -93,6 +93,7 @@ p {
     font-size: 17px;
     font-family: 'Raleway', sans-serif;
     margin-top: 40px;
+    text-align: justify;
 }
 
 p::first-letter {
@@ -298,7 +299,8 @@ label {
 
 .grid-honey {
     display: grid;
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr;
+    margin-top: 45px;
 }
 
 .grid {
@@ -320,10 +322,12 @@ label {
     margin: 10px 0px 0px 0px;
 }
 
+.service {
+    margin-top: 45px;
+}
+
 @media (min-width: 540px) {
-
-
-    .fields {
+     .fields {
         margin-top: 30px;
         display: flex;
         flex-direction: row;
@@ -376,6 +380,7 @@ label {
 
     p {
         line-height: 28px;
+        text-align: left;
     }
 
     footer li {
@@ -410,7 +415,10 @@ label {
         grid-gap: 10px;
     }
 
-   
+      
+    .gap {
+        margin-top: 20px;
+    }
 
   
 }
@@ -465,6 +473,11 @@ label {
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
         margin-top: 45px;
+    }
+
+       
+    .gap {
+        margin-top: 25px;
     }
 
 
