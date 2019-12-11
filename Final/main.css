@@ -326,6 +326,14 @@ label {
     margin-top: 45px;
 }
 
+.text p {
+    margin-top: 10px;
+}
+
+.text p::first-letter {
+    padding-left: 0px;
+}
+
 @media (min-width: 540px) {
      .fields {
         margin-top: 30px;
@@ -421,7 +429,7 @@ label {
     }
 
     .gap {
-        margin-top: 20px;
+        margin-top: 25px;
     }
 
   
@@ -486,6 +494,6 @@ label {
 
           
     .gap {
-        margin-top: 25px;
+        margin-top: 30px;
     }
 }
