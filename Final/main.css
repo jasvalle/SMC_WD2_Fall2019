@@ -288,19 +288,37 @@ label {
     justify-content: space-evenly;
 }
 
-.field {
-    margin: 20px 0px;
+.picturequote {
+    margin-top: 45px
 }
 
 .text {
     display: none;
 }
 
-.grid-about {
+.grid-honey {
     display: grid;
     grid-template-columns: 1fr
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 40px;
+}
+
+.main-h3 {
+    margin: 45px 0px 20px 0px;
+}
+
+.main-page {
+    margin: 0px;
+}
+
+.label-space {
+    margin: 10px 0px 0px 0px;
+}
 
 @media (min-width: 540px) {
 
@@ -380,11 +398,21 @@ label {
 
     }
 
-    .grid-about {
+    .grid-honey {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
     }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+   
+
+  
 }
 
 @media (min-width: 800px) {
@@ -398,7 +426,7 @@ label {
 
 
     main {
-        width: 80%;
+        width: 70%;
         margin: auto;
     }
 
@@ -432,9 +460,9 @@ label {
         margin: auto;
     }
 
-    .grid-about {
+    .grid-honey {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
     }
 

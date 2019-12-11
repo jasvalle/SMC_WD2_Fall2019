@@ -1,3 +1,4 @@
+//mobile nav
 function openNav() {
     document.getElementById("mySidenav").style.width = "100%";
 }
@@ -16,3 +17,12 @@ sideNavToggle.addEventListener("click", function () {
         openNav();
     }
 });
+
+//donate button
+var btn = document.getElementById("donateBtn");
+var thankBox = document.getElementById("Message")
+
+donateBtn.addEventListener("click", function () {
+    thankBox.style.display = "block";
+});
+
