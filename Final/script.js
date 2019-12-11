@@ -20,9 +20,11 @@ sideNavToggle.addEventListener("click", function () {
 
 //donate button
 var btn = document.getElementById("donateBtn");
-var thankBox = document.getElementById("Message")
+var thankBox = document.getElementById("Message");
+var donateForm = document.getElementById("donateForm");
 
 donateBtn.addEventListener("click", function () {
     thankBox.style.display = "block";
+    donateForm.style.display = "none";
 });
 
