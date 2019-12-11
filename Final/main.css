@@ -415,7 +415,11 @@ label {
         grid-gap: 10px;
     }
 
-      
+    .align {
+        text-align: left;
+        margin: 0px;
+    }
+
     .gap {
         margin-top: 20px;
     }
@@ -475,10 +479,13 @@ label {
         margin-top: 45px;
     }
 
-       
+    .align {
+        text-align: left;
+        margin: 0px;
+    }
+
+          
     .gap {
         margin-top: 25px;
     }
-
-
 }
